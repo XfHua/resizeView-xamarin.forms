@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:scalesample="clr-namespace:ScaleSample"
+             xmlns:local ="clr-namespace:ScaleSample"
+             x:Class="ScaleSample.MainPage">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Label
+            Grid.Row="0"
+            Grid.Column="0"
+            Text="LeftLabel"
+            HorizontalTextAlignment="Center"
+            VerticalTextAlignment="Center"
+            BackgroundColor="Red">
+        </Label>
+
+        <local:View2 Grid.Row="0" Grid.Column="1"/>
+
+        <Button  Grid.Row="1" Text="go" Clicked="Button_Clicked"/>
+
+        <!--<Grid
+            Grid.Row="0"
+            Grid.Column="1"
+             Grid.ColumnSpan="2"
+            BackgroundColor="Pink"
+            >
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Label
+                Grid.Row="0"
+                Grid.Column="0"
+                Text="SmallLabel"               
+                HorizontalTextAlignment="Center"
+                VerticalTextAlignment="Center"
+                BackgroundColor="Green">
+            </Label>
+            <Label
+                Grid.Row="1"
+                Grid.Column="0"
+                Text="SmallLabel"
+                HorizontalTextAlignment="Center"
+                VerticalTextAlignment="Center"
+                BackgroundColor="Blue">
+            </Label>
+            <Label
+                Grid.Row="0"
+                Grid.Column="1"
+                Text="SmallLabel"
+                HorizontalTextAlignment="Center"
+                VerticalTextAlignment="Center"
+                BackgroundColor="Yellow">
+            </Label>
+            <scalesample:scaleView
+                BackgroundColor="Brown"
+                Grid.Row="1"
+                Grid.Column="1" 
+                >
+            </scalesample:scaleView>
+        </Grid>-->
+    </Grid>
+</ContentPage>

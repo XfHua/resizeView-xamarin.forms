@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ScaleSample.View2">
+  <ContentView.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+
+                <RowDefinition Height="100"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="auto"/>
+
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+
+                <ColumnDefinition Width="100"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="auto"/>
+
+            </Grid.ColumnDefinitions>
+
+            <Label Text="111" Grid.Row="0" Grid.Column="0" BackgroundColor="Pink"/>
+            <Label Text="222" Grid.Row="0" Grid.Column="1" BackgroundColor="Yellow"/>
+            <Label Text="333" Grid.Row="0" Grid.Column="2" BackgroundColor="Brown"/>
+            <Label Text="444" Grid.Row="1" Grid.Column="0" BackgroundColor="Red"/>
+            <Label Text="555" Grid.Row="1" Grid.Column="1" BackgroundColor="Orange"/>
+            <Label Text="666" Grid.Row="1" Grid.Column="2" BackgroundColor="Blue"/>
+            <Label Text="777" Grid.Row="2" Grid.Column="0" BackgroundColor="Olive"/>
+            <Label Text="888" Grid.Row="2" Grid.Column="1" BackgroundColor="SeaGreen"/>
+            <Label Text="999" Grid.Row="2" Grid.Column="2" BackgroundColor="Purple"/>
+
+
+        </Grid>
+    </ContentView.Content>
+</ContentView>
